@@ -1,6 +1,9 @@
 def nofor(function,  iterable):
-    n = 0
-    while n != iterable:
-        print(function(n))
-        n += 1
+    a = range(iterable)
+    iterator = iter(a)
+    while iterator != iterable:
+        print(function(next(iterator)))
+    return
+
+
 
